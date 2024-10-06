@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #e9f5e1; /* Light background color */
+    color: #333;
+}
+
+.rtext {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.header-background {
+    background: url('https://w0.peakpx.com/wallpaper/545/300/HD-wallpaper-sunset-serenity-scenic-great-lakes-states-rock-beauty-in-nature-clouds-great-lakes-basin-lake-superior-serenity-beauty-evening-lakeshore-landscape.jpg') no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+
+.header2 {
+    background: url('https://t3.ftcdn.net/jpg/09/20/72/04/360_F_920720469_xyLKpDFkwJ3naURCfWbmHSbrWlSRiYUI.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+.header2-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header2-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #4CAF50; /* Green button */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #45a049; /* Darker green */
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.info-card {
+    flex: 1 1 30%;
+    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.quote-sec {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.quote-sec blockquote {
+    font-style: italic;
+    color: #666;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #4CAF50; /* Green footer */
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+}
+
+footer .icons {
+    font-size: 1.5em;
+}
+
+footer .icons i {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer .icons i:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .info-card {
+        flex: 1 1 100%; /* Stack cards on smaller screens */
+    }
+    
+    .header2-text h2 {
+        font-size: 2em;
+    }
+
+    .header2-text p {
+        font-size: 1em;
+    }
+}
